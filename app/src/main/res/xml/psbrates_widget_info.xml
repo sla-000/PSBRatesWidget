@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:configure="ru.sla000.psb_rates_widget.psbrates.PSBRatesWidgetConfigureActivity"
+                    android:initialKeyguardLayout="@layout/psbrates_widget"
+                    android:initialLayout="@layout/psbrates_widget"
+                    android:minHeight="40dp"
+                    android:minWidth="110dp"
+                    android:previewImage="@drawable/photo_widget"
+                    android:updatePeriodMillis="1800000"
+                    android:widgetCategory="home_screen|keyguard">
+</appwidget-provider>

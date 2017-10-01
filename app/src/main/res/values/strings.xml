@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PSBRates</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title" formatted="false">%s / %s</string>
+    <string name="cbr" formatted="false">%.2f %s</string>
+    <string name="text" formatted="false"><![CDATA[<font color=#E57373>%.2f</font> / <font color=#81C784>%.2f</font>]]></string>
+    <string name="no_data" formatted="false">Sorry, no data</string>
+    <string name="wait_please" formatted="false">Wait please...</string>
+    <string name="error" formatted="false">Error</string>
+    <string-array name="update_time">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>1 day</item>
+    </string-array>
+</resources>
