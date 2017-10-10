@@ -3,6 +3,7 @@ package ru.sla000.psb_rates_widget.psbrates;
 import android.app.IntentService;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -241,9 +242,9 @@ public class UpdateService extends IntentService {
 
 		final Intent updateIntent = new Intent( context, PSBRatesWidget.class );
 		updateIntent.setAction( AppWidgetManager.ACTION_APPWIDGET_UPDATE );
-//		AppWidgetManager man = AppWidgetManager.getInstance(context);
-//		final int[] ids = man.getAppWidgetIds(new ComponentName(context, PSBRatesWidget.class)); // all ids
-//		updateIntent.putExtra( AppWidgetManager.EXTRA_APPWIDGET_IDS, ids );
+		AppWidgetManager man = AppWidgetManager.getInstance(context);
+		final int[] ids = man.getAppWidgetIds(new ComponentName(context, PSBRatesWidget.class)); // all ids
+		updateIntent.putExtra( AppWidgetManager.EXTRA_APPWIDGET_IDS, ids );
 		final PendingIntent pIntent = PendingIntent.getBroadcast( context, widgetId, updateIntent, 0 );
 		views.setOnClickPendingIntent( R.id.textCurrency, pIntent );
 
